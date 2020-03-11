@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 export default class App extends Component {
 
@@ -24,20 +25,13 @@ console.log('Your input value is: ' + this.state.username)
 //Send state to the server code
 }
 
-print(){
-  document.write(this.state.username)
-}
-
-
 render(){
 return (
     <div>
-    <textarea type="text" onChange={this.updateInput}></textarea>
+    <textarea type="text" onChange={this.updateInput} className='inline-txtarea'></textarea>
     <button type="submit" onClick={this.handleSubmit} >Display</button>
-
-    if onclick=true{
-      <h2>{this.print}</h2>
-    }
+    <h1><br></br><br></br><br></br>{this.state.username}</h1>
+    
     </div>
   );
 }
