@@ -32,7 +32,7 @@ function App() {
             >
             </textarea>
             <button className="button" onClick={change}>Run</button>
-            <textarea cols="75" placeholder="result" className={isRed ? "red" : isGreen ? "green" : "inline-txtarea"}>
+            <textarea cols="75" placeholder="result" className={isRed ? "red" : isRed ? "green" : "inline-txtarea"}>
             </textarea>
       </header>
     </div>
